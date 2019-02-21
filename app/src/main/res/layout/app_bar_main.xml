@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inc.hope.bookworm101.Activity.MainActivity">
+
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tv_capsule"
+        app:floatingSearch_searchBarMarginLeft="10dp"
+        app:floatingSearch_searchBarMarginRight="10dp"
+        app:floatingSearch_searchBarMarginTop="6dp"
+        app:floatingSearch_searchHint="Search BookWorm. . ."
+        app:floatingSearch_suggestionsListAnimDuration="250"
+        app:floatingSearch_showSearchKey="false"
+        app:floatingSearch_leftActionMode="showHamburger"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"
+        app:floatingSearch_menu="@menu/menu_floating_search"
+        />
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical" />
+
+
+</RelativeLayout>
